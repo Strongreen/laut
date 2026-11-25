@@ -8,10 +8,7 @@ Extensão gratuita para Chrome, feita para quem estuda idiomas e para tornar a w
 
 [![Chrome Web Store](https://img.shields.io/badge/Chrome-Web%20Store-4285F4?logo=googlechrome&logoColor=white)](#-instalação)
 [![Gratuito](https://img.shields.io/badge/pre%C3%A7o-gratuito-2ea44f)](#)
-[![Feito por Ströngreen](https://img.shields.io/badge/feito%20por-Ströngreen-1f6f43)](https://laut.strongreen.com)
 [![Licença](https://img.shields.io/badge/licen%C3%A7a-source--available-orange)](LICENSE)
-
-[**Site**](https://laut.strongreen.com) · [**Instalar**](#-instalação) · [**Contribuir**](#-contribuindo)
 
 </div>
 
@@ -21,7 +18,7 @@ Extensão gratuita para Chrome, feita para quem estuda idiomas e para tornar a w
 
 O **Laut** coloca a tradução onde você já está: em qualquer página, com qualquer texto, de qualquer idioma para outro. Sem abrir outra aba, sem copiar e colar em sites de tradução.
 
-Foi criado por [Ströngreen](https://strongreen.com) e é lançado **de graça para a comunidade**.
+**Projeto gratuito para a comunidade**.
 
 ## 🎯 Para quem é
 
@@ -44,7 +41,7 @@ Foi criado por [Ströngreen](https://strongreen.com) e é lançado **de graça p
 
 ### Pela Chrome Web Store (recomendado)
 
-1. Abra a página do Laut na [Chrome Web Store](#) <!-- TODO: colocar o link quando publicado -->
+1. Abra a página do Laut na [Chrome Web Store](https://strongreen.com/laut) <!-- TODO: colocar o link quando publicado -->
 2. Clique em **Usar no Chrome**
 3. Fixe o ícone 📌 do Laut na barra de extensões
 
@@ -74,7 +71,7 @@ O **uso do Laut é gratuito**. O código é *source-available*: pode ser lido e 
 
 ## 💚 Feito por
 
-**Ströngreen** · [laut.strongreen.com](https://laut.strongreen.com)
+**Ströngreen** · [laut](https://strongreen.com/laut)
 
 <div align="center">
 

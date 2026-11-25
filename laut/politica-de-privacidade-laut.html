@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidade do Laut</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1d1708;
+    --muted: #5f594b;
+    --line: #dedbd3;
+    --accent: #fbad18;
+    --link: #1d1708;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161513; --text: #f3efe6; --muted: #b3ad9f; --line: #38342d; --link: #fbad18; }
+  }
+  @media (prefers-contrast: more) {
+    :root { --bg: #000000; --text: #ffffff; --muted: #e0e0e0; --line: #ffffff; --link: #ffe600; }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0 auto;
+    max-width: 44rem;
+    padding: 2.5rem 1.25rem 4rem;
+    color: var(--text);
+    font: 1.0625rem/1.65 "Inter", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  }
+  header { border-bottom: 4px solid var(--accent); padding-bottom: 1.25rem; margin-bottom: 2rem; }
+  h1 { margin: 0 0 .35rem; font-size: 2rem; line-height: 1.15; letter-spacing: -.02em; }
+  h2 { margin: 2.2rem 0 .6rem; font-size: 1.25rem; line-height: 1.3; }
+  p, ul { margin: 0 0 1rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin-bottom: .45rem; }
+  .meta { color: var(--muted); font-size: .95rem; margin: 0; }
+  a { color: var(--link); text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  code { font: .95em ui-monospace, SFMono-Regular, Menlo, monospace; background: color-mix(in srgb, var(--text) 8%, transparent); padding: .1em .3em; border-radius: .25em; }
+  table { width: 100%; border-collapse: collapse; margin: 0 0 1rem; font-size: .98rem; }
+  th, td { text-align: left; vertical-align: top; padding: .55rem .6rem; border-bottom: 1px solid var(--line); }
+  th { font-weight: 700; }
+  mark { background: var(--accent); color: #1d1708; padding: .05em .3em; border-radius: .25em; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Política de privacidade do Laut</h1>
+  <p class="meta">Laut by <a href="https://www.strongreen.com">Ströngreen</a> · Atualizada em 25 de novembro de 2026</p>
+</header>
+
+<main>
+  <p>O Laut é uma extensão do Chrome que lê em voz alta o texto das páginas que você abre. Esta política explica, de forma direta, o que ela faz com as suas informações. Em resumo: <strong>o Laut não coleta dados pessoais, não tem conta, não mostra anúncios e não envia o conteúdo das páginas para servidores do desenvolvedor.</strong></p>
+
+  <h2>O que o Laut processa</h2>
+  <p>Quando você pede uma leitura (pelo botão da extensão, pelo atalho de teclado ou pelo menu do botão direito), o Laut lê o texto da seleção ou da página que você escolheu. Esse texto é usado somente para:</p>
+  <ul>
+    <li>dividir em frases e falar em voz alta;</li>
+    <li>descobrir o idioma do texto, no seu navegador;</li>
+    <li>destacar na página a frase e a palavra que estão sendo lidas;</li>
+    <li>traduzir, se você ativar a tradução (veja abaixo).</li>
+  </ul>
+  <p>Tudo isso acontece no seu navegador. O texto não é gravado em disco pelo Laut, não é enviado ao desenvolvedor e não é compartilhado com terceiros pelo Laut.</p>
+
+  <h2>O que fica guardado</h2>
+  <p>O Laut guarda, apenas no seu navegador (<code>chrome.storage</code>), as suas preferências:</p>
+  <ul>
+    <li>velocidade da leitura;</li>
+    <li>voz escolhida para cada idioma;</li>
+    <li>idioma de tradução escolhido, se houver;</li>
+    <li>se o alto contraste está ligado.</li>
+  </ul>
+  <p>Quando o atalho ou o botão direito não conseguem iniciar uma leitura, o Laut guarda temporariamente a mensagem de erro, para mostrá-la quando você abrir a extensão. Essa mensagem não contém o texto das páginas e é apagada quando você a vê ou fecha o navegador.</p>
+
+  <h2>Vozes e tradução</h2>
+  <ul>
+    <li><strong>Vozes.</strong> O Laut usa as vozes de síntese de fala do navegador e do sistema. Se você escolher uma voz online oferecida pelo Chrome (como as vozes “Google”), o próprio Chrome pode enviar as frases que estão sendo lidas ao serviço dessa voz, que segue a política do respectivo provedor. Vozes instaladas no sistema funcionam sem esse envio. O Laut não controla essa escolha do navegador.</li>
+    <li><strong>Tradução.</strong> A tradução usa o tradutor integrado do Chrome, que roda no seu computador. O Chrome pode baixar pacotes de idiomas na primeira vez que você usar um par de idiomas. O Laut não envia o texto a nenhum serviço de tradução próprio ou de terceiros.</li>
+  </ul>
+
+  <h2>Por que cada permissão é necessária</h2>
+  <table>
+    <thead><tr><th>Permissão</th><th>Para que serve</th></tr></thead>
+    <tbody>
+      <tr><td><code>tts</code></td><td>Falar o texto em voz alta.</td></tr>
+      <tr><td><code>activeTab</code></td><td>Acessar a aba atual somente quando você clica na extensão, usa o atalho ou o menu de contexto.</td></tr>
+      <tr><td><code>scripting</code></td><td>Ler o texto da aba em que você pediu a leitura e aplicar o destaque visual.</td></tr>
+      <tr><td><code>storage</code></td><td>Guardar as preferências listadas acima.</td></tr>
+      <tr><td><code>contextMenus</code></td><td>Mostrar “Ler seleção em voz alta” e “Ler página inteira em voz alta” no botão direito.</td></tr>
+    </tbody>
+  </table>
+  <p>O Laut não pede acesso permanente a nenhum site e não carrega código de servidores externos.</p>
+
+  <h2>O que o Laut não faz</h2>
+  <ul>
+    <li>Não vende nem transfere dados de usuários a terceiros.</li>
+    <li>Não usa dados para publicidade, perfis ou análises de comportamento.</li>
+    <li>Não usa dados para fins que não sejam o funcionamento descrito acima.</li>
+    <li>Não usa dados para avaliar crédito ou elegibilidade a empréstimos.</li>
+  </ul>
+  <p>O uso das informações recebidas segue a Política de Dados de Usuário do Chrome Web Store, incluindo os requisitos de uso limitado.</p>
+
+  <h2>Alterações desta política</h2>
+  <p>Se o Laut passar a tratar dados de outra forma, esta página será atualizada antes e a data no topo mudará.</p>
+
+  <h2>Contato</h2>
+  <p>Dúvidas sobre privacidade: <mark>[SEU E-MAIL DE CONTATO]</mark> · <a href="https://www.strongreen.com">www.strongreen.com</a></p>
+</main>
+
+<footer>Laut by Ströngreen</footer>
+
+</body>
+</html>

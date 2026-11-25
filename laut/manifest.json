@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "Laut",
+  "version": "1.0.1",
+  "description": "Lê em voz alta a seleção ou a página, destaca frase e palavra, traduz no seu computador e tem alto contraste.",
+  "homepage_url": "https://www.strongreen.com",
+  "minimum_chrome_version": "105",
+  "permissions": [
+    "tts",
+    "activeTab",
+    "scripting",
+    "storage",
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Laut"
+  },
+  "commands": {
+    "ler-selecao": {
+      "suggested_key": {
+        "default": "Alt+Shift+L"
+      },
+      "description": "Ler a seleção (ou a página, se nada estiver selecionado)"
+    },
+    "ler-pagina": {
+      "suggested_key": {
+        "default": "Alt+Shift+P"
+      },
+      "description": "Ler a página inteira"
+    },
+    "parar-leitura": {
+      "suggested_key": {
+        "default": "Alt+Shift+S"
+      },
+      "description": "Parar a leitura"
+    }
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  }
+}
